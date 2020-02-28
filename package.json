@@ -10,6 +10,9 @@
     "dev": "nodemon src/server.js --exec './node_modules/.bin/eslint . && node'",
     "start": "node src/server.js"
   },
+  "engines": {
+    "node": "12.16.1"
+  },
   "dependencies": {
     "bcrypt": "^4.0.0",
     "date-fns": "^2.9.0",
