@@ -25,7 +25,7 @@ routes.post('/guilds/:guild_id/users/recover', guildMiddleware, AuthController.R
 routes.post('/guilds/:guild_id/users/reset', guildMiddleware, AuthController.ResetPass)
 
 routes.get('/guilds', GuildController.List)
-routes.post('/guilds', roleMiddleware(ROOT), GuildController.Create)
+routes.post('/guilds/create', roleMiddleware(ROOT), GuildController.Create)
 
 routes.get('/guilds/:guild_id/users', guildMiddleware, UserController.List)
 routes.post('/guilds/:guild_id/users/change_pass', guildMiddleware, AuthController.ChangePass)

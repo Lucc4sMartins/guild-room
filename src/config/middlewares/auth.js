@@ -5,6 +5,7 @@ const ErrorHandler = require('../../helpers/ErrorHandler')
 module.exports = (req, res, next) => {
   const noAuthRoutes = [
     /\/health/,
+    /\/guilds$/,
     /\/guilds\/.*\/users\/signup/,
     /\/guilds\/.*\/users\/signin/,
     /\/guilds\/.*\/users\/recover/,
